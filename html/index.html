@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>scientifique calculator</title>
+</head>
+<body>
+    <!-- The onclick tags allow the management of click events and here I have
+      used them to call all my JavaScript functions -->
+ 
+    <div class="container">
+        <h1>SCIENTIFIQUE CALCULATOR</h1>
+        <div class="display">
+            <input type="text" placeholder="0" id="screen">
+        </div>
+        <div class="btns">
+            <div class="rown">
+                <button id="ce" onclick=" space()">CE</button>
+                <button onclick="fact()">X!</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button class="btn">%</button>
+                <button id="ac" onclick="spaceall()">AC</button>
+            </div>
+            <div class="rown">
+                <button onclick="asin()">asin</button>
+                <button onclick="acos()">acos</button>
+                <button onclick="atan()">atan</button>
+                <button onclick="power3()">x <span style="position: relative; bottom: 0.5em; right: .2em;">3</span></button>
+                <button onclick="log2()">ln</button>
+                <button class="btn">00</button>
+            </div>
+            <div class="rown">
+                <button onclick="sin()">sin</button>
+                <button onclick="pi()">π</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">/</button>
+            </div>
+            <div class="rown">
+                <button onclick="cos()">cos</button>
+                <button onclick="log()">log10</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">*</button>
+            </div>
+            <div class="rown">
+                <button onclick="tan()">tan</button>
+                <button onclick="squart()">√
+                    
+                </button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">-</button>
+            </div>
+            <div class="rown">
+                <button onclick="exp()">e</button>
+                <button onclick="power()">x <span style="position: relative; bottom: 0.5em; right: .2em;">2</span></button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+              <!-- The eval attribute allows to return the results of an operation performed by the user -->
+                <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+                <button class="btn">+</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="../javascript/javasript.js"></script>
+    
+</body>
+</html>
